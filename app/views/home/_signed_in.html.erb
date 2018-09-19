@@ -1,0 +1,43 @@
+<div class="container home-signed-in margin-top-100">
+  <div class="row">
+
+    <div class="col-lg-4">
+      <h4 class="lead">Hi, <%=current_user.name%></h4>
+      <p><i class="fas fa-user-tie"></i> UserID.#SCT00<%=current_user.id%> | <%=current_user.phone%></p>
+      <hr>
+      <h3>Things you can do online</h3>
+      <small>
+        <ul class="list-unstyled">
+            <li>   <i class="fas fa-chevron-circle-right"></i> <a href="#"> Buy airtime</a></li>
+            <li>   <i class="fas fa-chevron-circle-right"></i><a href="#">  Apply for a loan</a></li>
+            <li>   <i class="fas fa-chevron-circle-right"></i><a href="#"> Buy tickets</a></li>
+            <li>   <i class="fas fa-chevron-circle-right"></i><a href="#"> Buy a handset or gadgets</a></li>
+        </ul>
+      </small>
+    </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="home-card card-body">
+              <%=render'home/charts/points'%>
+              <%=render'home/charts/credit'%>
+              <%=render'home/charts/data'%>
+              <%=render'home/charts/voice'%>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="home-card card-body">
+              <h4>Latest News</h4>
+              <p><i class="fas fa-newspaper"></i> Press Release</p>
+              <br>
+              <hr>
+                <%=render'news'%>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

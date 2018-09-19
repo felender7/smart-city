@@ -1,0 +1,20 @@
+<div class="container">
+<div class="page-header">
+  <%= link_to news_index_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    All News
+  <% end %>
+  <%= link_to edit_news_path(@news), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+
+</div>
+
+<dl class="dl-horizontal">
+
+  <dd> <h3><%= @news.title %></h3></dd>
+  <dd><p><%= @news.body %></p></dd>
+
+</dl>
+</div>
