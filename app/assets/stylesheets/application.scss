@@ -26,7 +26,9 @@ $primary-color:black;
 body > .alert {
   margin-bottom: 0;
 }
-
+body > .container-fluid {
+    padding: 40px 15px 0;
+}
 #logo.btn{
   font-size: 16px;
 }
@@ -37,4 +39,15 @@ body > .alert {
   -webkit-transition: .35s;
   -o-transition: .35s;
  transition: .35s;
+}
+
+.innerCircle .profilePhotoIcon {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
 }

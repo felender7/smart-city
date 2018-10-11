@@ -1,11 +1,21 @@
-<div class="container home-signed-in margin-top-100">
+<div class="container-fluid home-signed-in">
   <div class="row">
-
     <div class="col-lg-4">
       <div class="jumbotron p-3">
-        <h4 class="lead">Hi, <%=current_user.name%></h4>
-        <p><i class="fas fa-user-tie"></i> UserID.#SCT00<%=current_user.id%> | <%=current_user.phone%></p>
-         <a href="buy-online" class="btn btn-warning"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Buy</a>
+          <div class="row">
+            <div class="col-lg-4 col-sm-2">
+              <%=render'home/avator'%>
+            </div>
+            <div class="col-lg-8">
+                <h5 class="">Hi again, <br><b><%=current_user.name%>!</b></h5>
+                 <small>ID.#SCT00<%=current_user.id%> | <%=current_user.phone%></small><br>
+                 <br>
+                <a href="buy-online" class="btn btn-warning btn-block"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Buy</a>
+
+
+            </div>
+
+        </div>
       </div>
       <hr>
       <h3>Things you can do online</h3>
